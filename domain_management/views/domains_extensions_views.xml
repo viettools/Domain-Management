@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="domains_extensions_form_view" model="ir.ui.view">
+        <field name="name">domains.extensions.form.views</field>
+        <field name="model">domains.extensions</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false" delete="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="domain_type"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="tld_managers"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="domains_extensions_tree_view" model="ir.ui.view">
+        <field name="name">domains.extensions.tree.views</field>
+        <field name="model">domains.extensions</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false" delete="false">
+                <field name="name"/>
+                <field name="domain_type"/>
+                <field name="tld_managers"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="domains_extensions_act_window" model="ir.actions.act_window">
+        <field name="name">Domains Extensions</field>
+        <field name="res_model">domains.extensions</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

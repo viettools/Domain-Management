@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_domain_management" name="Domain Management" sequence="45" web_icon="domain_management,static/description/icon.png">
+        <menuitem id="menu_setting" name="Setting" sequence="150">
+            <menuitem id="menu_domains_extensions" name="Domains Extensions" sequence="50" action="domains_extensions_act_window"/>
+        </menuitem>
+    </menuitem>
+
+</odoo>
